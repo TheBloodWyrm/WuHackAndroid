@@ -23,7 +23,12 @@
     </style>
 
     <style name="BaseTheme.App">
-
     </style>
+
+    <style name="AppCompatAlertDialogStyle" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorAccent">@color/primaryColor</item>
+        <item name="android:textColorPrimary">@color/primaryColor</item>
+    </style>
+
 
 </resources>

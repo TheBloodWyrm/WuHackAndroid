@@ -1,28 +1,12 @@
 package hackwu.wuhack;
 
-import android.webkit.MimeTypeMap;
-import android.webkit.WebView;
-import android.webkit.WebViewClient;
-
-import org.w3c.dom.Document;
-import org.w3c.dom.Element;
-import org.w3c.dom.Node;
-import org.w3c.dom.NodeList;
-
-import java.text.SimpleDateFormat;
-import java.util.Calendar;
-
-import javax.xml.parsers.DocumentBuilder;
-import javax.xml.parsers.DocumentBuilderFactory;
-import javax.xml.parsers.ParserConfigurationException;
-
 /**
  * Created by Paul on 29.06.2015.
  */
 public class HTMLModel
 {
 
-    private static Node getElementByID(NodeList nl, String id)
+    /*private static Node getElementByID(NodeList nl, String id)
     {
         Node node = null;
 
@@ -54,7 +38,7 @@ public class HTMLModel
 
     public static final String SCHEDULE_TEMPLATE = DAL.getFileContent("schedule_template.html");
 
-    public static Document convertToHTMLv3(final WebView wv, final Lesson[][] schedule, final String title, final int calweek)
+    public static DocumentsContract.Document convertToHTMLv3(final WebView wv, final Lesson[][] schedule, final String title, final int calweek)
     {
 
         wv.loadData(SCHEDULE_TEMPLATE, "text/html; charset=UTF-8", null);
@@ -186,5 +170,5 @@ public class HTMLModel
         days[1] = sdf.format(cal.getTime());
 
         return days;
-    }
+    }*/
 }
